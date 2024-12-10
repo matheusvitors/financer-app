@@ -1,4 +1,4 @@
-package com.financer
+package com.matheusvitor.financer
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
