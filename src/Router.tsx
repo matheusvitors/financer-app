@@ -18,9 +18,10 @@ export const Router: React.FC = () => {
 
     return (
         <NavigationContainer>
-            <StatusBar barStyle={theme.statusBar} hidden={false} translucent={true} backgroundColor={theme.common.background} />
+            <StatusBar barStyle={theme.statusBar} hidden={false} translucent={true} backgroundColor="green" />
+            {/* <StatusBar barStyle={theme.statusBar} hidden={false} translucent={true} backgroundColor={theme.common.background} /> */}
             <RootStack.Navigator initialRouteName='Home'>
-                <RootStack.Screen name='Home' component={HomeScreen} />
+                <RootStack.Screen name='Home' component={HomeScreen} options={{headerShown: false}} />
             </RootStack.Navigator>
         </NavigationContainer>
     );
